@@ -1,7 +1,6 @@
 package core.basesyntax;
 
 public class Palindrome {
-
     /**
      * <p>Реализуйте метод, проверяющий, является ли заданная строка палиндромом.
      * Палиндромом называется строка, которая читается одинаково слева направо
@@ -22,8 +21,8 @@ public class Palindrome {
      */
     public boolean isPalindrome(String text) {
         String result = text.toLowerCase().replaceAll("[^a-z0-9]", "");
-        StringBuilder rev = new StringBuilder(result);
-        rev.reverse();
-        return result.equals(rev.toString());
+        StringBuilder revers = new StringBuilder(result);
+        revers.reverse();
+        return result.equals(revers.toString());
     }
 }
